@@ -33,6 +33,7 @@ div, p {
 
 body {
 	font-weight: bold;
+
 }
 
 
@@ -42,6 +43,19 @@ h1 {
 	font-size: 30px;
 	font-weight: bold;
 	font-family: Helvetica;
+}
+
+#main_container {
+	width:600px;
+
+	/*
+
+	margin:	TOP RIGHT BOTTOM LEFT;
+	padding: TOP RIGHT BOTTOM LEFT;
+
+	*/
+
+	margin: 10px auto 10px auto;
 }
 
 #main_heading {
@@ -55,16 +69,16 @@ h1 {
 	*/
 } 
 
+.hidden_image {
+	display:none;
+}
+
 .green {
 	color: #00ff00;
 }
 
 #kitten_image_1 {
 	width: 600px;
-}
-
-#kitten_image_1:hover {
-	width: 1200px;
 }
 
 
@@ -79,6 +93,10 @@ h1 {
 	padding: 10px;
 
 	display: inline;
+}
+
+.main_nav_list_item:hover {
+	background-color: #00FF00;
 }
 
 

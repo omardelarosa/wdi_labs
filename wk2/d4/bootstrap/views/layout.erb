@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sinatra and Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css" />
+
+	<script type="text/javascript" src="/js/jquery-2.0.1.min.js"></script>
+	<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Awesome Co.</a>
+				<ul class="nav">
+					<li class="active">
+						<a href="#">Link 1</a>
+					</li>
+					<li>
+						<a href="#">Link 2</a>
+					</li>
+					<li>
+						<a href="#">Link 3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<button class="btn btn-primary" type="submit">Button</button>
+
+		<div class="dropdown">
+		  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+		    <li>thing 1</li>
+		    <li>thing 1</li>
+		    <li>thing 1</li><li>thing 1</li>
+		  </ul>
+		</div>
+
+
+		<%= yield %>
+
+
+
+	</div> <!-- end row -->
+</div> <!-- end container -->
+
+</body>
+</html>
