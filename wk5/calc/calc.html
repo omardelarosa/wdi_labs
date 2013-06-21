@@ -1,0 +1,42 @@
+<html>
+Calc Demo
+<script>
+
+var operation,
+	firstNumber,
+	secondNumber;
+
+while (operation != 'q') {
+	firstNumber = parseInt(prompt('Please enter the first number.'));
+	secondNumber = parseInt(prompt('Please enter the second number.'));
+	operation = prompt('Enter your desired operation: (a)dd, (s)ubtract, (m)ultiply, (d)ivide or (q)uit ');
+
+//your job: implement subtract, multiple and divide.  you have 10 mins
+
+	switch(operation) {
+		case 'a':
+			alert(firstNumber + secondNumber)
+			break
+		case 's':
+			alert(firstNumber - secondNumber)
+			break
+		case 'd':
+			alert(firstNumber / secondNumber)
+			break
+		case 'm':
+			alert(firstNumber * secondNumber)
+			break
+		case 'q':
+			alert('Goodbye')
+			break
+		default:
+			alert("Please enter a valid operation")
+			break
+	} 
+}
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js calc</title>
+</head>
+<body>
+	JavaScript Basics!
+
+	<script>
+
+var menu, first, second, res = ""
+
+var add = function(first,second) {
+	res = first + second
+	return res
+}
+
+while (menu != "q") {
+	menu = prompt("What do you want to do? \(q\)uit or \(a\)dd")
+	if (menu == "a") {
+		var first = parseInt(prompt("What is the first number?"))
+		var second = parseInt(prompt("What is the second number?"))
+		alert(add(first,second))
+	}
+}
+	</script>
+</body>

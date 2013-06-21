@@ -1,0 +1,59 @@
+<html>
+Calc Demo 2
+<script>
+
+//how do we refactor calc1 into fewer lines of code?
+
+var operation,
+	firstNumber,
+	secondNumber;
+
+function getInput(msg, is_num) {
+	
+	is_num = is_num || false;
+
+	if (is_num) {
+	
+		return parseInt(prompt(msg))
+	
+	} else {
+	
+		return prompt(msg)
+	
+	}
+	 
+}
+
+function getOperator(msg) {
+	
+}
+
+/*
+while (operation != 'q') {
+	var msg1 = 'Please type the first number'
+	var msg2 = 'Please the second number.'
+
+	switch(operation) {
+		case 'a':
+			alert(getNumber(msg1) + getNumber(msg2))
+			break
+		case 's':
+			alert(firstNumber - secondNumber)
+			break
+		case 'd':
+			alert(firstNumber / secondNumber)
+			break
+		case 'm':
+			alert(firstNumber * secondNumber)
+			break
+		case 'q':
+			alert('Goodbye')
+			break
+		default:
+			alert("Please enter a valid operation")
+			break
+	} 
+}
+*/
+</script>
+</html>

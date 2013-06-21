@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js calc</title>
+</head>
+<body>
+	JavaScript Basics!
+
+	<script>
+
+var calc = {
+	menu : "",
+	first : "",
+	second : "",
+	res : "",
+	getOption : function() {
+		this.menu = prompt("What do you want to do? \(q\)uit or \(a\)dd")
+		return this.menu
+	},
+	getFirst : function() {
+		this.first = parseInt(prompt("What is the first number?"))
+		return this.first
+	},
+	getSecond : function() {
+		this.second = parseInt(prompt("What is the second number?"))
+		return this.second
+	},
+ 	add : function(first,second){
+		this.res = first + second
+		return this.res
+	}
+}
+
+while (calc.menu != "q") {
+	calc.getOption()
+	if (calc.menu == "a") {
+		calc.res = calc.add(calc.getFirst(),calc.getSecond())
+		alert(calc.res)
+	}
+}
+
+	</script>
+</body>
